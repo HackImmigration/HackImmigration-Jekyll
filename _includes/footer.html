@@ -1,0 +1,16 @@
+{% if page.active == "residents" %}
+	<footer class="footer-fixed-residents">
+{% elsif page.active == "history" %}
+	<footer class="footer-fixed-history">
+{% else %}
+	<footer>
+{% endif %}
+	<div class="footer-inner">
+		<div class="footer-first">
+			<a class="logo" href="{{ site.url }}{{ site.baseurl }}">South Park</a>
+		</div>
+		<div class="footer-second">
+			<p>&copy; {{ site.time | date: '%Y' }} Ria Carmin</p>
+		</div>
+	</div>
+</footer>

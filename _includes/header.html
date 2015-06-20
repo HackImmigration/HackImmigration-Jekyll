@@ -1,0 +1,32 @@
+<header>
+<div class="header-inner">
+	<div class="header-first">
+		<a class="logo" href="{{ site.url }}{{ site.baseurl }}">South Park</a>
+	</div>
+	<div class="header-second">
+		<ul>
+			<li>
+				{% if page.active == "places" %}
+					<a href="{{ site.baseurl }}/places" class="active">Places</a>
+				{% else %}
+					<a href="{{ site.baseurl }}/places">Places</a>
+				{% endif %}
+			</li>
+			<li>
+				{% if page.active == "residents" %}
+					<a href="{{ site.baseurl }}/residents" class="active">Residents</a>
+				{% else %}
+					<a href="{{ site.baseurl }}/residents">Residents</a>
+				{% endif %}
+			</li>
+			<li>
+				{% if page.active == "history" %}
+					<a href="{{ site.baseurl }}/history" class="active">History</a>
+				{% else %}
+					<a href="{{ site.baseurl }}/history">History</a>
+				{% endif %}
+			</li>
+		</ul>
+	</div>
+</div>
+</header>

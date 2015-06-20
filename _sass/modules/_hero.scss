@@ -1,0 +1,89 @@
+.hero {
+	$color-overlay-top: $accent2-color;
+	$transparency-top: .7;
+	$color-overlay-bottom: $accent1-color;
+	$transparency-bottom: .4;
+	$color-overlay-angle: 30deg;
+
+	height: 100%;
+	width: 100%;
+	
+	.hero-top-strip {
+		margin: 0;
+		position: absolute;
+		top: 0;
+		height: 14px;
+		width: 100%;
+		@include linear-gradient(left, $color-overlay-top, $color-overlay-bottom);
+	}
+	.hero-copy {
+		z-index: 9999;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		color: transparentize(white, .3);
+		margin: 0 auto;
+		text-align: center;
+
+		@include media(min-width $medium-screen) {
+			width: 570px;
+		}
+		img.logo {
+			margin-bottom: 1em;
+		}
+		h1 {
+			font-size: em(16);
+			@include media(min-width $medium-screen) {
+				font-size: em(22);
+				margin-bottom: 1em;
+			}
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+			
+		}
+		li {
+			display: inline-block;
+			margin-left: 8px;
+			padding: 0 14px 0 0;
+			border-right: 1px solid transparentize(white, .5);
+			text-indent: 0;
+			@include transition(all, .2s, ease-in-out);
+			&:first-of-type {
+				margin-left: 0;
+			}
+			&:last-of-type {
+				border-right:none;
+			}
+			a {
+				font-size: em(20);
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-weight: 700;
+				&:hover {
+				}
+			}
+		}
+	}
+	.hero-color-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		@include linear-gradient($color-overlay-angle, transparentize($color-overlay-top, $transparency-top), transparentize($color-overlay-bottom, $transparency-bottom));
+		display: block;
+		@include position(absolute, 0px 0px 0px 0px);
+	}
+	.hero-video-background {
+		display: none;
+		position: absolute !important;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -9999;
+		
+	}
+}

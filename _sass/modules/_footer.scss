@@ -1,0 +1,61 @@
+footer {
+	$vertical-angle: 12deg;
+	$gradient-color-top:transparentize($accent2-color, .8);
+	$gradient-color-bottom:transparentize($accent1-color, .8);
+	overflow: hidden;
+	width: 100%;
+	@include linear-gradient($vertical-angle, $gradient-color-top, $gradient-color-bottom);
+	@include media(min-width $medium-screen) {
+		height: 60px;
+	}
+	.footer-inner {
+		@include outer-container;
+		padding-top: 14px;
+	}
+
+	.footer-first {
+		@include span-columns(12);
+		text-align: center;
+		a {
+			font-family: $header-font-family;
+			@include heading(em(22), transparentize($accent2-color, 0.6), 6px);
+			&:hover {
+				color: transparentize($accent2-color, 0.4);
+			}
+		}
+
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: left;
+		}
+	}
+
+	.footer-second {
+		@include span-columns(12);
+		text-align: center;
+		p {
+			padding: 4px 0;
+			color: $accent2-color;
+		}
+
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: right;
+		}
+	}
+
+}
+
+.footer-fixed-history {
+	@include media(min-width $medium-screen min-height 794px) {
+		position: absolute;
+		bottom:0;
+	}
+}
+
+.footer-fixed-residents {
+	@include media(min-width $medium-screen min-height 720px) {
+		position: absolute;
+		bottom:0;
+	}
+}

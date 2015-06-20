@@ -1,0 +1,29 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "modules/modules";
+
+
+// GLOBAL
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.wrapper-extras {
+	$color-overlay-top: $accent2-color;
+	$color-overlay-bottom: $accent1-color;
+	$color-overlay-angle: 35deg;
+	$transparency-top: .95;
+	$transparency-bottom: .75;
+	@include linear-gradient($color-overlay-angle, transparentize($color-overlay-top, $transparency-top), transparentize($color-overlay-bottom, $transparency-bottom));
+	background-attachment: fixed;
+}

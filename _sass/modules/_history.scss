@@ -1,0 +1,94 @@
+.history {
+	@mixin history-columns($width) {
+		@include media(min-width $medium-screen) {
+			position: relative;
+			padding: 1em;
+			width: $width;
+			float: left;
+		}
+	}
+	@include outer-container;
+	padding: 1em;
+	//min-height: 84%;
+	.history-line {
+		h4 {
+			color: $medium-gray;
+			font-size: 1.1em;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		h3 {
+			font-family: $base-font-family;
+			font-weight: 400;
+			font-size: 1.5em;
+		}
+		p {
+			&:last-of-type {
+				padding-bottom: .5em;
+				border-bottom: $base-border;
+				@include media(min-width $medium-screen) {
+					border-bottom: none;
+					margin: .5em 0;
+				}
+			}
+		}
+		@include media(min-width $medium-screen) {
+			margin-top: 1.5em;
+			border-top: $base-border;
+		}
+	}
+	
+
+	.history-circle {
+		display: none;
+		@include media(min-width $medium-screen) {
+			display: block;
+			position: absolute;
+			top: -7px;
+			left: 0px;
+			height: 14px;
+			width: 14px;
+			border-radius: 50%;
+			border: 2px solid $base-border-color;
+			background: white;
+		}
+	}
+	.history-circle-last {
+		display: none;
+		@include media(min-width $medium-screen) {
+			display: block;
+			position: absolute;
+			top: -7px;
+			right: 0px;
+			height: 14px;
+			width: 14px;
+			border-radius: 50%;
+			border: 2px solid $base-border-color;
+			background: white;
+		}
+	}
+	.history-1852 {
+		@include history-columns(30%);
+	}
+	.history-1906 {
+		@include history-columns(42%);
+	}
+	.history-1990 {
+		@include history-columns(28%);
+	}
+	.history-images {
+		display: none;
+		@include media(min-width $medium-screen) {
+			margin-top: 1.5em;
+			display: block;
+			@include outer-container;
+		}
+	}
+	.history-image {
+		
+		@include media(min-width $medium-screen) {
+			@include span-columns(4);
+			padding: 0 14px;
+		}
+	}
+}

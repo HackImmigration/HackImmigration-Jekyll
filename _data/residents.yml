@@ -1,0 +1,26 @@
+- name: URX
+  url: https://urx.com/
+  description: 'Our biggest strength is in the depth and range of our team&rsquo;s experience. We aspire to be more than the sum of our parts, and strive to maintain a thriving culture based on our guiding tenets. URX&rsquo;s platform uses contextual information to find the most relevant actions for your users. AppViews makes it easy to bring related actions into your app.'
+
+- name: Hattery
+  url: http://hattery.com/
+  description: 'Hattery is a co-working, education, and events space in the heart of the San Francisco&rsquo;s entrepreneurial SoMa district. We&rsquo;re a community of entrepreneurs building extraordinary companies that promise to make remarkable impacts on our lives.We&rsquo;re scrappy, and we&rsquo;ll stay that way. We work fast and smart, and this gives us the freedom and flexibility to blaze a trail or take a different fork if it&rsquo;s the best path.'
+
+- name: PeerSpace
+  url: http://www.peerspace.com
+  description: 'We exist to help companies and individuals find one-of-a-kind short-term space to inspire their best work. Studies show that access to inspiring spaces and changing your work surroundings regularly are key drivers of innovation for all types of professionals. Whether for an off-site or meeting, corporate or social event, or production of any kind, PeerSpace is the first platform to easily find these unique and inspiring places.'
+- name: Krux
+  url: http://www.krux.com/
+  description: 'Krux helps businesses drive revenue by delivering smarter content, commerce and marketing experiences to people. The Path to People Data Activation starts with unifying your people data from disparate sources into a single view, then providing valuable experiences tailored to each individual. Iterative learning and always-on, intelligent awareness drive increasingly granular personalization. The result is game-changing customer experiences and business ROI. Krux next-gen DMP delivers on the promise and premise of People Data Activation.'
+
+- name: Pure Enegries
+  url: http://pureenergies.com/
+  description: 'PURE Energies is committed to being the trusted energy advisor to North American homeowners. Pure Energies is part of the NRG Home Solar family, wholly owned by NRG Energy, a Fortune 500 company that owns and operates one of the country&rsquo;s largest power generation and retail electricity businesses. As such we are a leading energy advisor in Canada and the United States.'
+
+- name: 'R&#47;GA'
+  url: http://www.rga.com/
+  description: 'R&#47;GA is an American international advertising agency headquartered in New York. In the fall of 2008, in a bid to attract new creative and tech talent, R&#47;GA opened its 16,000-square-foot San Francisco office in the city&rsquo;s SOMA district. The Bay Area&rsquo;s progressive culture has proven to be a natural fit with R&#47;GA&rsquo;s forward-thinking ethos. Since its launch, R&#47;GA San Francisco has been responsible for winning several pieces of new business and now supports some of the agency’s most prominent accounts.'
+
+- name: Splunk
+  url: http://www.splunk.com/
+  description: 'What Is Splunk? You see servers and devices, apps and logs, traffic and clouds. We see data—everywhere. Splunk&reg; offers the leading platform for Operational Intelligence. It enables the curious to look closely at what others ignore—machine data—and find what others never see&#58; insights that can help make your company more productive, profitable, competitive and secure. What can you do with Splunk? Just ask.'

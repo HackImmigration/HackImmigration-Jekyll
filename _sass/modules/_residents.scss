@@ -1,0 +1,103 @@
+.residents-main {
+	// $color-overlay-top: $accent2-color;
+	// $color-overlay-bottom: $accent1-color;
+	// $color-overlay-angle: 35deg;
+	// $transparency-top: .95;
+	// $transparency-bottom: .75;
+	// @include linear-gradient($color-overlay-angle, transparentize($color-overlay-top, $transparency-top), transparentize($color-overlay-bottom, $transparency-bottom));
+	// background-attachment: fixed;
+	min-height: 100%;
+	.residents-inner {
+		padding: 2em 0;
+		@include outer-container;
+		h2 {
+			text-align: center;
+			font-size: 2.2em;
+			color: $accent1-color;
+		}
+		h3 {
+			text-align: center;
+			display: block;
+			max-width: 460px;
+			margin: 1em auto;
+			padding: 10px;
+			color: $dark-gray;
+			font-family: $base-font-family;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 1.2em;
+		}
+	}
+	.residents-list {
+		@include span-columns(12);
+		@include media(min-width $medium-screen) {
+			@include span-columns(3);
+		}
+		padding: 1.5em;
+		li {
+			padding: 8px 14px;
+			margin: 0 4px 16px 4px;
+			display: inline-block;
+			border: 1px solid $base-link-color;
+			border-radius: 4px;
+			@include media(min-width $medium-screen) {
+				padding: 0;
+				padding-bottom: .4em;
+				margin-bottom: 0px;
+				display: block;
+				border: none;
+				border-radius: 0;
+			}
+			a {
+				font-size: 1.2em;
+			}
+			&.active {
+				font-weight: 700;
+				pointer-events: none;
+				cursor: default;
+			}
+			&.not-active {
+				
+			}
+		}
+	}
+	.residents-information {
+		@include span-columns(12);
+		@include omega;
+		padding: 2em;
+		background: white;
+		@include media(min-width $medium-screen) {
+			@include span-columns(9);
+			min-height: 400px;
+			padding: 3em;
+		}
+	}
+
+	.residents-content {
+		display: none;
+		font-size: 1.3em;
+		font-weight: 300;
+	}
+}
+
+.residents {
+	$color-overlay-top: $accent2-color;
+	$color-overlay-bottom: $accent1-color;
+	$color-overlay-angle: 35deg;
+
+	@include linear-gradient($color-overlay-angle, $color-overlay-top, $color-overlay-bottom);
+	text-align: center;
+	color: $white;
+	margin: em(40) 0;
+	padding: em(20) em(10) em(40) em(10);
+
+	h2 {
+		font-size: 2.2em;
+		margin: .5em em(10) .5em em(10);
+	}
+
+	a {
+		font-size: 1.1em;
+		line-height: 1.8em;
+	}
+}

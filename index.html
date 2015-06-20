@@ -1,0 +1,75 @@
+---
+layout: home-layout
+---
+
+<!-- HERO: Start -->
+<div class="hero">
+<div class="hero-top-strip"></div>
+<div class="hero-copy">
+  <img src="assets/HI-logo-light.png" alt="" class="logo">
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae doloremque minus corrupti repudiandae provident, magni ipsam unde. Rem fugit totam facere expedita voluptate eaque nemo animi, voluptates, magnam magni soluta.</h1>
+  <ul>
+    <li><a href="places">Places</a></li>
+    <li><a href="residents">Residents</a></li>
+    <li><a href="history">History</a></li>
+  </ul>
+</div>
+<div class="hero-color-overlay">&nbsp;</div>
+<div class="hero-video-background" data-vide-bg="assets/south-park" data-vide-options="loop: true, muted: true, position: 0% 0%, posterType: jpg" id="hero-video-background">&nbsp;</div>
+</div>
+<!-- HERO: End -->
+
+<!-- PLACES: Start -->
+<div class="places">
+<h2>Places</h2>
+<h3>South Park is a home for many small cozy coffee shops, restaurants, shops and even a brewery! Explore all that this little park has to offer.</h3>
+<ul>
+  {% for place in site.data.places %}
+    <li>
+      <h4>{{ place.title }}</h4>
+      <a href="{{ place.url }}" class="places-link" target="_blank">{{ place.displayurl }}</a>
+      <p class="places-description">{{place.description}}</p>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+<!-- PLACES: End -->
+
+<!-- RESIDENTS:Start -->
+<div class="residents">
+<h2>Residents</h2>
+<ul>
+  {% for resident in site.data.residents %}
+    <li><a href="{{resident.url}}" target="_blank">{{resident.name}}</a></li>
+  {% endfor %}
+</ul>
+</div>
+<!-- RESIDENTS:End -->
+<!-- HISTORY: Start -->
+<div class="history">
+  <h2>History</h2>
+  <div class="history-line">
+    <div class="history-1852">
+      <div class="history-circle">&nbsp;</div>
+      <h4>1852</h4>
+      <h3>Founded by George Gordon</h3>
+      <p>{{site.data.history[1852]}}</p>
+    </div>
+    <div class="history-1906">
+      <div class="history-circle">&nbsp;</div>
+      <h4>1906</h4>
+      <h3>Earthquake</h3>
+      <p>{{site.data.history[1906]}}</p>
+    </div>
+    <div class="history-1990">
+      <div class="history-circle">&nbsp;</div>
+      <div class="history-circle-last">&nbsp;</div>
+      <h4>1990</h4>
+      <h3>Dot-Com Boom</h3>
+      <p>{{site.data.history[1990]}}</p>
+    </div>
+  </div>
+  
+</div>
+<!-- HISTORY: End -->
+

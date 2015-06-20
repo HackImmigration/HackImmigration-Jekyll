@@ -1,0 +1,72 @@
+header {
+	$vertical-angle: 12deg;
+	$gradient-color-top:$accent2-color;
+	$gradient-color-bottom:$accent1-color;
+
+	@include linear-gradient($vertical-angle, $gradient-color-top, $gradient-color-bottom);
+	@include media(min-width $medium-screen) {
+		height: 80px;
+	}
+	.header-inner {
+		@include outer-container;
+		padding: 22px 0;
+	}
+
+	.header-first {
+		@include span-columns(12);
+		text-align: center;
+		margin-bottom: 1em;
+		a {
+			font-family: $header-font-family;
+			@include heading(em(22), transparentize(white, 0.4), 6px);
+			&:hover {
+				color: $white;
+			}
+		}
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+
+	.header-second {
+		@include span-columns(12);
+		text-align: center;
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+		li {
+			display: inline-block;
+			border-right: 1px solid transparentize(white, 0.8);
+			padding: 4px 1.4em 4px 0;
+			margin-left: 1em;
+			&:last-of-type {
+				border-right: none;
+				padding-right: 0;
+			}
+
+			a {
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				color: $white;
+				font-size: em(12);
+				@include transition(all .2s ease-in-out);
+				&:hover {
+					color: $base-accent-color;
+				}
+				&.active {
+					font-weight: 700;
+					pointer-events: none;
+					cursor: default;
+				}
+			}
+		}
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: right;
+		}
+	}
+}

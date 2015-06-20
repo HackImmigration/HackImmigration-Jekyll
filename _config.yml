@@ -1,0 +1,13 @@
+# Site settings
+title: South Park | San Francisco
+email: ria.carmin@gmail.com
+description: South Park is a small oval-shaped park South of Market, and it is the center of a neighborhood of the same name, and South Park St., which encircles the park.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://akimalunar.github.io" # the base hostname & protocol for your site
+twitter_username: HackImmigration
+github_username:  HackImmigration
+sass:
+  style: compressed
+
+# Build settings
+markdown: kramdown
